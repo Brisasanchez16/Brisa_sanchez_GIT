@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Playfair+Display&display=swap');
+body{
+    background-image: url(../assets/imag/fondo.jpg);
+}
+
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    background-color: rgb(63, 95, 63);
+    padding: 30px;
+}
+
+.amenu{
+    text-decoration: none;
+    color: beige;
+    font-family: 'Playfair Display', serif;
+}
+.amenu:hover{
+    color:  rgb(187, 141, 25);
+}
+/*index*/
+
+header{
+    background-color: rgb(0, 0, 0) ;
+    background-size: 100px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr) ;
+    grid-template-rows: 150px 30px;
+    align-items: center;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    transform: translate(10px 20px);
+}
+
+.tituloin{
+    display: inline;
+    font-size: 70px;
+    font-weight: 260px;
+    align-items: center;
+    color: rgb(187, 141, 25);
+    font-family: 'Dancing Script', cursive;
+    grid-column: 4/7;
+
+}
+.boton{
+    grid-row: 2;
+    grid-column: 8
+}
+
+.boton a{
+    text-decoration: none;
+    color: beige;
+}
+
+button{
+    background-color: rgb(63, 110, 15);
+    text-decoration-color: beige;
+}
+
+button:hover{
+    background-color: rgb(187, 141, 25);;
+}
+.iconos{
+    grid-column: 8;
+}
+.portada{
+display: flex;
+justify-items: center;
+}
+
+h4{
+    color: rgb(63, 110, 15);
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin-left: 20pxs;
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    line-height: 20px;
+    margin: 20px;
+    text-align: center;
+    border: solid 5px rgb(187, 141, 25);
+}
+
+.flex{
+    display: flex;
+    padding: 30px;
+    flex-direction: row ;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-left: 25px;
+}
+
+.espacio{
+    margin: 10px;
+}
+
+
+/*libros*/
+
+.titulo{
+    display: block;
+    font-size: 70px;
+    font-weight: 260px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto ;
+    color: rgb(187, 141, 25);
+    font-family: 'Dancing Script', cursive; 
+    grid-column: 4/6;
+}
+
+.imagen1{
+    margin: 20px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border: solid 5px rgb(187, 141, 25);
+}
+
+.titulo1{
+    font-family: 'Playfair Display', serif;
+    color: beige;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.texto1{
+    font-family: 'Playfair Display', serif;
+    color: beige;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.titulo2{
+    font-family: 'Playfair Display', serif;
+    color: beige;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.imagen2{
+    margin: 20px;
+    float: left;
+    margin-bottom: 100px;
+    margin-right: 20px;
+    margin-left: 10px;
+    border: solid 5px rgb(187, 141, 25);
+    
+}
+.texto2{
+    font-family: 'Playfair Display', serif;
+    color: beige;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 60px;
+}
+
+footer{
+    background-color:rgb(63, 95, 63); 
+    color: beige;
+    margin-top: 250px;
+    font-family: 'Playfair Display', serif;
+}
+
+/*cristales*/
+
+
+.cristales img{
+    display: flex;
+    justify-items: center;
+    border: solid 5px rgb(187, 141, 25);
+}
+
+.cristales h2{
+    font-family: 'Playfair Display', serif;
+    color: beige;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.cristales p{
+    font-family: 'Playfair Display', serif;
+    color: beige;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+.cristales ol li{
+    font-family: 'Playfair Display', serif;
+    color: beige;
+    list-style-type: circle 20px;
+    margin-left: 20px;
+}
+
+/*pendulos*/
+.pendulos img{
+    display: flex;
+    justify-items: center;
+    border: solid 5px rgb(187, 141, 25);
+}
+
+.pendulos h2{
+    font-family: 'Playfair Display', serif;
+    color: beige;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px
+}
+
+.pendulos p{
+    font-family: 'Playfair Display', serif;
+    color: beige;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+.video{
+    display: flex;
+    justify-items: center;
+    border: solid 5px rgb(187, 141, 25);
+}
+
+/*tarot*/
+
+.imagentarot{
+    display: flex;
+    justify-items: center;
+    border: solid 5px rgb(187, 141, 25);
+}
+
+
+.tarot ul{
+    list-style: none;
+    font-style: 0;
+}
+
+.tarot li{
+    display: inline-block;
+    width: 25px;
+    position: relative;
+    font-size: 25px;
+    color: beige;
+    margin-left: 30px;
+    line-height: 24px;
+}
+
+.tarot li a{
+    text-decoration: none;
+    color: beige;
+}
+
+.tarot ul ul{
+    position: relative;
+    display: none;
+}
+
+.tarot ul ul li{
+    display: block;
+}
+
+.tarot ul li:hover ul{
+    display: block;
+}
+
+
+.tarotsec h2{
+    font-family: 'Playfair Display', serif;
+    color: beige;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.tarotsec p{
+    font-family: 'Playfair Display', serif;
+    color: beige;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+.video{
+    margin-left: 20px;
+    border: solid 5px rgb(187, 141, 25);
+}
+
+/*brujas*/
+.brujas ul{
+    list-style: none;
+    font-style: 0;
+}
+
+.brujas li{
+    display: inline-block;
+    width: auto;
+    position: relative;
+    font-size: 25px;
+    color: beige;
+    margin-left: 30px;
+    margin-top: 20px;
+    line-height: 2px;
+}
+
+.brujas li a{
+    text-decoration: none;
+    color: beige;
+}
+
+.brujas ul ul{
+    position: relative;
+    display: none;
+}
+
+.brujas ul ul li{
+    display: block;
+}
+
+.brujas ul li:hover ul{
+    display: block;
+}
+
+.brujass h2{
+    font-family: 'Playfair Display', serif;
+    color: beige;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.brujass img{
+    margin-left: 20px;
+    border: solid 5px rgb(187, 141, 25);
+}
+
+.brujass p{
+    font-family: 'Playfair Display', serif;
+    color: beige;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+/*iniciar sesion y registrarse*/
+
+.titulosec{
+    display: block;
+    font-size: 70px;
+    font-weight: 260px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    color: rgb(187, 141, 25);
+    font-family: 'Dancing Script', cursive; 
+}
+
+.botones label{
+    color: beige;
+    margin: 20px;
+    display: block;
+}
+
+.menusec{
+    color: beige;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.liboton li a{
+    text-decoration: none;
+    color: beige;
+}
+
+.liboton{
+    margin-left: 20px;
+}
+
+.botones input {
+    display: block;
+    margin: 20px;
+}
+.casa{
+    display: grid;
+    grid-row: 2;
+}
+
+
+/*mediaqueries*/
+.header-responsive{
+    display: none;
+}
+.menu-responsive{
+    display: none;
+}
+.footer-responsive{
+    display: none;
+}
+
