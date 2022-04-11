@@ -14,8 +14,9 @@ body{
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-    background-color: rgb(63, 95, 63);
     padding: 30px;
+    background: rgb(63,110,15);
+    background: linear-gradient(90deg, rgba(63,110,15,1) 0%, rgba(63,109,29,1) 37%, rgba(107,109,29,1) 66%);
 }
 
 .amenu{
@@ -40,7 +41,7 @@ header{
 .logo{
     width: 150px;
     height: 150px;
-    transform: translate(10px 20px);
+
 }
 
 .tituloin{
@@ -107,6 +108,9 @@ h4{
 .espacio{
     margin: 10px;
 }
+.espacio:hover{
+    transform:rotate(-10deg)
+}
 
 
 /*libros*/
@@ -172,10 +176,11 @@ h4{
 }
 
 footer{
-    background-color:rgb(63, 95, 63); 
     color: beige;
     margin-top: 250px;
     font-family: 'Playfair Display', serif;
+    background: rgb(63,110,15);
+    background: linear-gradient(90deg, rgba(63,110,15,1) 0%, rgba(63,109,29,1) 37%, rgba(107,109,29,1) 66%);
 }
 
 /*cristales*/
