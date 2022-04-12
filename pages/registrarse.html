@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
     <link rel="stylesheet" href="../css/estilos.css">
+        <!--bootstrap-->
+        <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
     <link rel="shortcut icon" href="../assets/logo/witchcraftlogoo.png" type="image/x-icon">
 </head>
 
 <body>
-    <header>
+    <header class="ri">
         <img src="../assets/logo/witchcraftlogoo.png" alt="" height="150px">
         <a href="../index.html"><p><img src="../assets/logo/casaicon.png" alt="" height="30px" class="casa"></p></a>
     </header>
@@ -20,22 +22,32 @@
             <h1 class="titulosec">Registrarse</h1>
         </div>
         
-        <form class="botones" action="procesar.php" method="post">
-            <label for="Nombre" class="formulario">Nombre:</label>
-            <input type="text" name="Nombre" placeholder="Ingresatunombre"class="formulario">
-            <label for="Apellido"> Apellido:</label>
-            <input type="text" name="Apellido" placeholder="Ingresatuapellido">
-            <label for="Email">Email:</label>
-            <input type="Email" name="Email" placeholder="Ingresatuemail" required>
-            <label for="pass">Contraseña:</label>
-            <input type="password" name="Contraseña" placeholder="Ingresatucontraseña">
-            <label for="Submit">Enviar:</label>
-            <input type="submit" name="Enviar">
-            <label for="Reset">Borrar formulario:</label>
-            <input type="Reset" name="Borrar formulario">
-        </form>
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="validationCustom01" required placeholder="Pon tu nombre aquí">
+        <div class="valid-feedback">
+        </div>
+        </div>
+        <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="validationCustom02" required placeholder="Pon tu apellido aquí">
+        <div class="valid-feedback">
+        </div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Contraseña">
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+        </div>
+    </form>
     </main>
-
 
 <footer>
     <nav>
@@ -54,6 +66,7 @@
         2022 Todos los derechos reservados 
     </p>
 </footer>   
+<script src="../libs/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>

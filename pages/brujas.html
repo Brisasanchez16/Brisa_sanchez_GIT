@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brujas</title>
     <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="stylesheet" href="../css/mediaqueries.css">
+        <!--bootstrap-->
+        <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
     <link rel="shortcut icon" href="../assets/logo/witchcraftlogoo.png" type="image/x-icon">
 </head>
 
@@ -21,61 +22,76 @@
         <img class="logo-responsive" src="../assets/logo/witchcraftlogoo.png" >
         <h1 class="titulo-responsive" >Tipos de Brujas</h1>
     <!--MENU RESPONSIVE-->
+    <div class="menu-responsive">
         <div class="menu-responsive">
-            <ul>
-                <li><h4>MENU</h4>
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../pages/libros.html">Libros</a> </li>
-                        <li><a href="../pages/Cristales.html">Cristales</a></li>
-                        <li><a href="../pages/pendulos.html">Pendulos</a></li>
-                        <li><a href="../pages/tarot.html">Tarot</a></li>
-                        <li><a href="../pages/brujas.html">Brujas</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                    <h5 class="text-white h4">Menú</h5>
+                    <span class="text-muted">
+                        <a class="menu-a" href="../index.html">Inicio</a>
+                        <a href="../pages/libros.html">Libros</a>
+                        <a href="../pages/Cristales.html">Cristales</a>
+                        <a href="../pages/pendulos.html">Pendulos</a>
+                        <a href="../pages/tarot.html">Tarot</a>
+                        <a href="../pages/brujas.html">Brujas</a>
+                    </span>
+                </div>
+            </div>
+                <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                </nav>
         </div>
     </header>
     <main>
-        <nav>
-            <ul class="menu">
-                <li><a class="amenu" href="../index.html">Inicio</a></li>
-                <li><a class="amenu" href="../pages/libros.html">Libros</a></li>
-                <li><a class="amenu" href="../pages/Cristales.html">Cristales</a></li>
-                <li><a class="amenu" href="../pages/pendulos.html">Pendulos</a></li>
-                <li><a class="amenu" href="../pages/tarot.html">Tarot</a></li>
-                <li><a class="amenu" href="../pages/brujas.html">Brujas</a></li>
-            </ul>
-        </nav>
-        <nav class="brujas">
-            <ul>
-                <li>índice
-                <ul>
-                <li><a href="#brujab">Bruja blanca</a></li>
-                <li><a href="#brujan">Bruja negra</a></li>
-                <li><a href="#brujag">Bruja gris</a></li>
-                <li><a href="#brujav">Bruja verde</a></li>
-                <li><a href="#brujad">Bruja diánica</a></li>
-                <li><a href="#brujaga">Bruja gardneriana</a></li>
-                <li><a href="#brujax">Bruja xandriana o alexandriana</a></li>
-                <li><a href="#brujas">Bruja solitaria</a></li>
-                <li><a href="#brujaa">Bruja augur</a></li>
-                <li><a href="#brujac">Bruja cósmica</a></li>
-                <li><a href="#brujace">Bruja ceremonial</a></li>
-                <li><a href="#brujadc">Bruja de los cristales</a></li>
-                <li><a href="#brujaf">Bruja faery (hada)</a></li>
-                <li><a href="#brujacer">Bruja del cerco (Hedge Witch)</a></li>
-                <li><a href="#brujahe">Bruja hereditaria</a></li>
-                <li><a href="#brujaco">Bruja de cocina</a></li>
-                <li><a href="#brujach">Bruja chamánica</a></li>
-                <li><a href="#brujacor">Bruja correlliana</a> </li>
-                <li><a href="#brujat">Bruja tradicional</a></li>
-                <li><a href="#brujae">Bruja eléctica</a></li>
-            </ul>
-                </li>
+        <nav class="barranavegacion"> 
+            <ul class="nav nav-pills nav-fill wnav">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/libros.html">Libros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/pendulos.html">Pendulos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/tarot.html">Tarot</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/brujas.html">Brujas</a>
+            </li>
             </ul>
         </nav>
 
+        <div class="lista-2">
+            <ul class="list-group">
+            <li class="list-group-item indice">Indice</li>
+            <li class="list-group-item list-group-item-warning"><a href="#brujab">Bruja blanca</a></li>
+            <li class="list-group-item list-group-item-warning"><a href="#brujan">Bruja negra</a></li>
+            <li class="list-group-item list-group-item-warning"><a href="#brujag">Bruja gris</a></li>
+            <li class="list-group-item list-group-item-warning"><a href="#brujav">Bruja verde</a></li>
+            <li class="list-group-item list-group-item-warning"><a href="#brujad">Bruja diánica</a></li>
+            <li class="list-group-item list-group-item-warning"><a href="#brujaga">Bruja gardneriana</a></li>
+            <li class="list-group-item list-group-item-warning"><a href="#brujax">Bruja xandriana o alexandriana</a></li>
+            <li class="list-group-item list-group-item-warning"><a href="#brujas">Bruja solitaria</a></li>
+            <li class="list-group-item list-group-item-warning"><a href="#brujaa">Bruja augur</a></li>
+            <li class="list-group-item list-group-item-warning"><a href="#brujac">Bruja cósmica</a></li>
+            <li class="list-group-item list-group-item-warning"><a href="#brujace">Bruja ceremonial</a></li>
+            <li class="list-group-item list-group-item-warning"><a href="#brujadc">Bruja de los cristales</a></li>
+            <li class="list-group-item list-group-item-warning"><a href="#brujaf">Bruja faery (hada)</a></li>
+            <li class="list-group-item list-group-item-warning"><a href="#brujacer">Bruja del cerco (Hedge Witch)</a></li>
+            <li class="list-group-item list-group-item-warning"><a href="#brujahe">Bruja hereditaria</a></li>
+            <li class="list-group-item list-group-item-warning"><a href="#brujaco">Bruja de cocina</a></li>
+            <li class="list-group-item list-group-item-warning"><a href="#brujach">Bruja chamánica</a></li>
+            <li class="list-group-item list-group-item-warning"><a href="#brujacor">Bruja correlliana</a></li>
+            <li class="list-group-item list-group-item-warning"><a href="#brujat">Bruja tradicional</a></li>
+            <li class="list-group-item list-group-item-warning"><a href="#brujae">Bruja eléctica</a></li>
+            </ul>
+        </div>
 
         <section class="brujass">
             <article id="brujab">
@@ -218,7 +234,7 @@
 <footer><p>    2022 Todos los derechos reservados</p>
 </footer>
 
-
+<script src="../libs/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>

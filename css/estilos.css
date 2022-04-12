@@ -10,23 +10,24 @@ body{
     padding: 0%;
 }
 
-.menu{
+.wnav{
     display: flex;
     justify-content: space-evenly;
     list-style: none;
     padding: 30px;
     background: rgb(63,110,15);
     background: linear-gradient(90deg, rgba(63,110,15,1) 0%, rgba(63,109,29,1) 37%, rgba(107,109,29,1) 66%);
+    margin-top: 20px;
 }
-
-.amenu{
+.wnav a{
     text-decoration: none;
     color: beige;
     font-family: 'Playfair Display', serif;
-}
-.amenu:hover{
+} 
+.wnav a:hover{
     color:  rgb(187, 141, 25);
 }
+
 /*index*/
 
 header{
@@ -101,7 +102,7 @@ h4{
     padding: 30px;
     flex-direction: row ;
     justify-content: space-evenly;
-    width: 90%;
+    width: 95%;
     margin-left: 25px;
 }
 
@@ -253,39 +254,28 @@ footer{
 }
 
 
-.tarot ul{
-    list-style: none;
-    font-style: 0;
+.lista li{
+    width: 100px;
+    margin-left: 20px;
 }
 
-.tarot li{
-    display: inline-block;
-    width: 25px;
-    position: relative;
-    font-size: 25px;
-    color: beige;
-    margin-left: 30px;
-    line-height: 24px;
-}
-
-.tarot li a{
+.lista a{
     text-decoration: none;
-    color: beige;
+    color: black;
 }
 
-.tarot ul ul{
-    position: relative;
-    display: none;
+.lista-2 li{
+    width: 400px;
+    margin-left: 20px;    
 }
 
-.tarot ul ul li{
-    display: block;
+.lista-2 a{
+    text-decoration: none;
+    color: black;
 }
-
-.tarot ul li:hover ul{
-    display: block;
+.indice{
+    margin-top: 40px;
 }
-
 
 .tarotsec h2{
     font-family: 'Playfair Display', serif;
@@ -366,6 +356,9 @@ footer{
 
 /*iniciar sesion y registrarse*/
 
+.ri{
+    border-bottom: solid 5px rgb(63,110,15);
+}
 .titulosec{
     display: block;
     font-size: 70px;
@@ -374,15 +367,31 @@ footer{
     margin-bottom: 30px;
     margin-top: 20px;
     color: rgb(187, 141, 25);
-    font-family: 'Dancing Script', cursive; 
+    font-family: 'Dancing Script', cursive;  
+    
+}
+.form-floating{
+    margin-left: 10px;
+    margin-right: 80px;
+    margin-top: 40px;
 }
 
-.botones label{
-    color: beige;
-    margin: 20px;
-    display: block;
+.col-12{
+    margin-top: 20px;
+    margin-left: 10px;
 }
 
+.col-md-4{
+    color: azure;
+    margin-left: 20px;
+}
+.mb-3{
+    color: azure;
+    margin-left: 20px;
+}
+.mb-3 input{
+    width: 436px;
+}
 .menusec{
     color: beige;
     font-size: 20px;
@@ -445,47 +454,10 @@ footer{
         display: grid;
         grid-column: 11/12;
     }
-
-    .menu-responsive ul{
-        list-style: none;
-        font-style: 0;
-    }
-    .menu-responsive li{
-        color: beige;
-        position: relative;
-        display: grid;
-        width: 30px;
-        line-height: 20px;
-        font-size: 15px;
-        background-color: rgb(63, 95, 63);
-    }
-
-    .menu-responsive h4{
-        color: burlywood;
+    .navbar-toggler-icon{
         font-size: 10px;
     }
-
-    .menu-responsive li a{
-        list-style: none;
-        color: beige;
-    }
-
-    .menu-responsive ul ul{
-        position: absolute;
-        display: none;
-        background-color: rgb(63, 95, 63);
-        width: 55px;
-    }
-
-    .menu-responsive ul ul li{
-        display: block;
-    }
-
-    .menu-responsive ul li:hover ul{
-        display: block;
-    }
-
-    .menu{
+    .barranavegacion{
         display: none;
     }
     .flex{

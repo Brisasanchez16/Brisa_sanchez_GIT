@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarot</title>
     <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="stylesheet" href="../css/mediaqueries.css">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
     <link rel="shortcut icon" href="../assets/logo/witchcraftlogoo.png" type="image/x-icon">
 </head>
 
@@ -21,48 +22,65 @@
         <img class="logo-responsive" src="../assets/logo/witchcraftlogoo.png" >
         <h1 class="titulo-responsive" >Tarot</h1>
     <!--MENU RESPONSIVE-->
+    <div class="menu-responsive">
         <div class="menu-responsive">
-            <ul>
-                <li><h4>MENU</h4>
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../pages/libros.html">Libros</a> </li>
-                        <li><a href="../pages/Cristales.html">Cristales</a></li>
-                        <li><a href="../pages/pendulos.html">Pendulos</a></li>
-                        <li><a href="../pages/tarot.html">Tarot</a></li>
-                        <li><a href="../pages/brujas.html">Brujas</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                    <h5 class="text-white h4">Menú</h5>
+                    <span class="text-muted">
+                        <a class="menu-a" href="../index.html">Inicio</a>
+                        <a href="../pages/libros.html">Libros</a>
+                        <a href="../pages/Cristales.html">Cristales</a>
+                        <a href="../pages/pendulos.html">Pendulos</a>
+                        <a href="../pages/tarot.html">Tarot</a>
+                        <a href="../pages/brujas.html">Brujas</a>
+                    </span>
+                </div>
+            </div>
+                <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                </nav>
         </div>
     </header>
     <main>
-        <nav>
-            <ul class="menu">
-                <li><a class="amenu" href="../index.html">Inicio</a></li>
-                <li><a class="amenu" href="../pages/libros.html">Libros</a></li>
-                <li><a class="amenu" href="../pages/Cristales.html">Cristales</a></li>
-                <li><a class="amenu" href="../pages/pendulos.html">Pendulos</a></li>
-                <li><a class="amenu" href="../pages/tarot.html">Tarot</a></li>
-                <li><a class="amenu" href="../pages/brujas.html">Brujas</a></li>
+        <nav class="barranavegacion"> 
+            <ul class="nav nav-pills nav-fill wnav">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/libros.html">Libros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/pendulos.html">Pendulos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/tarot.html">Tarot</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/brujas.html">Brujas</a>
+            </li>
             </ul>
         </nav>
         <div class="flex">
             <img class="imagentarot" src="../assets/imag/cartas.jpg" alt="" height="300px">
         </div>
 
-        <div class="tarot">
-            <ul>
-                <li>Indice
-                <ul>
-                    <li><a href="#historia">Historia</a></li>
-                    <li><a href="#Arcanos">Arcanos</a></li>
-                    <li><a href="#Tiradas">Tiradas</a></li>
-                    <li><a href="#Limpieza">Limpieza</a></li>
-                </ul>
-                </li>
+        <div class="lista">
+            <ul class="list-group">
+            <li class="list-group-item">Indice</li>
+            <li class="list-group-item list-group-item-warning"><a href="#historia">Historia</a></li>
+            <li class="list-group-item list-group-item-warning"><a href="#Arcanos">Arcanos</a></li>
+            <li class="list-group-item list-group-item-warning"><a href="#Tiradas">Tiradas</a></li>
+            <li class="list-group-item list-group-item-warning"><a href="#Limpieza">Limpieza</a></li>
             </ul>
         </div>
+
+
             
 
 
@@ -100,7 +118,7 @@
 <footer>
     <p>    2022 Todos los derechos reservados</p>
 </footer>
-
+<script src="../libs/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
