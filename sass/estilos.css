@@ -11,89 +11,130 @@ body {
 }
 
 .wnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   list-style: none;
   padding: 30px;
-  background: rgb(63, 110, 15);
-  background: linear-gradient(90deg, rgb(63, 110, 15) 0%, rgb(63, 109, 29) 37%, rgb(107, 109, 29) 66%);
+  background: #3f6e0f;
+  background: -webkit-gradient(linear, left top, right top, from(#3f6e0f), color-stop(37%, #3f6d1d), color-stop(66%, #6b6d1d));
+  background: linear-gradient(90deg, #3f6e0f 0%, #3f6d1d 37%, #6b6d1d 66%);
   margin-top: 20px;
 }
+
 .wnav a {
   text-decoration: none;
   color: beige;
   font-family: "Playfair Display", serif;
 }
+
 .wnav a:hover {
-  color: rgb(187, 141, 25);
+  color: #bb8d19;
 }
 
 /*index*/
 header {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   background-size: 100px;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 150px 30px;
-  align-items: center;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  -ms-grid-rows: 150px 30px;
+      grid-template-rows: 150px 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 header .logo {
   width: 150px;
   height: 150px;
 }
+
 header .tituloin {
   display: inline;
   font-size: 70px;
   font-weight: 260px;
-  align-items: center;
-  color: rgb(187, 141, 25);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #bb8d19;
   font-family: "Dancing Script", cursive;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
   grid-column: 4/7;
 }
+
 header .boton {
+  -ms-grid-row: 2;
   grid-row: 2;
+  -ms-grid-column: 8;
   grid-column: 8;
 }
+
 header a {
   text-decoration: none;
   color: beige;
 }
+
 header button {
-  background-color: rgb(63, 110, 15);
-  text-decoration-color: beige;
+  background-color: #3f6e0f;
+  -webkit-text-decoration-color: beige;
+          text-decoration-color: beige;
 }
+
 header button:hover {
-  background-color: rgb(187, 141, 25);
+  background-color: #bb8d19;
 }
+
 header .iconos {
+  -ms-grid-column: 8;
   grid-column: 8;
 }
 
 .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 30px;
-  flex-direction: row;
-  justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 95%;
   margin-left: 25px;
 }
+
 .flex .portada {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-items: center;
 }
+
 .flex .caja {
   width: 200px;
   height: 200px;
   line-height: 20px;
   margin: 20px;
   text-align: center;
-  border: solid 5px rgb(187, 141, 25);
+  border: solid 5px #bb8d19;
 }
+
 .flex .espacio {
   margin: 10px;
 }
+
 .flex .espacio:hover {
-  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
 }
 
 /*libros*/
@@ -104,8 +145,10 @@ header .iconos {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  color: rgb(187, 141, 25);
+  color: #bb8d19;
   font-family: "Dancing Script", cursive;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
   grid-column: 4/6;
 }
 
@@ -114,8 +157,9 @@ main .imagen1 {
   float: left;
   margin-bottom: 20px;
   margin-right: 20px;
-  border: solid 5px rgb(187, 141, 25);
+  border: solid 5px #bb8d19;
 }
+
 main .titulo1 {
   font-family: "Playfair Display", serif;
   color: beige;
@@ -123,12 +167,14 @@ main .titulo1 {
   margin-top: 20px;
   margin-left: 20px;
 }
+
 main .texto1 {
   font-family: "Playfair Display", serif;
   color: beige;
   font-size: 15px;
   font-weight: 300;
 }
+
 main .titulo2 {
   font-family: "Playfair Display", serif;
   color: beige;
@@ -136,14 +182,16 @@ main .titulo2 {
   margin-top: 10px;
   margin-left: 15px;
 }
+
 main .imagen2 {
   margin: 20px;
   float: left;
   margin-bottom: 100px;
   margin-right: 20px;
   margin-left: 10px;
-  border: solid 5px rgb(187, 141, 25);
+  border: solid 5px #bb8d19;
 }
+
 main .texto2 {
   font-family: "Playfair Display", serif;
   color: beige;
@@ -156,8 +204,9 @@ footer {
   color: beige;
   margin-top: 250px;
   font-family: "Playfair Display", serif;
-  background: rgb(63, 110, 15);
-  background: linear-gradient(90deg, rgb(63, 110, 15) 0%, rgb(63, 109, 29) 37%, rgb(107, 109, 29) 66%);
+  background: #3f6e0f;
+  background: -webkit-gradient(linear, left top, right top, from(#3f6e0f), color-stop(37%, #3f6d1d), color-stop(66%, #6b6d1d));
+  background: linear-gradient(90deg, #3f6e0f 0%, #3f6d1d 37%, #6b6d1d 66%);
 }
 
 /*cristales*/
@@ -168,16 +217,21 @@ footer {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  color: rgb(187, 141, 25);
+  color: #bb8d19;
   font-family: "Dancing Script", cursive;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
   grid-column: 4/6;
 }
 
 .cristales img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-items: center;
-  border: solid 5px rgb(187, 141, 25);
+  border: solid 5px #bb8d19;
 }
+
 .cristales h2 {
   font-family: "Playfair Display", serif;
   color: beige;
@@ -185,6 +239,7 @@ footer {
   margin-top: 30px;
   margin-left: 10px;
 }
+
 .cristales p {
   font-family: "Playfair Display", serif;
   color: beige;
@@ -192,6 +247,7 @@ footer {
   font-weight: 300;
   margin-left: 10px;
 }
+
 .cristales ol li {
   font-family: "Playfair Display", serif;
   color: beige;
@@ -207,16 +263,21 @@ footer {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  color: rgb(187, 141, 25);
+  color: #bb8d19;
   font-family: "Dancing Script", cursive;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
   grid-column: 4/6;
 }
 
 .pendulos img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-items: center;
-  border: solid 5px rgb(187, 141, 25);
+  border: solid 5px #bb8d19;
 }
+
 .pendulos h2 {
   font-family: "Playfair Display", serif;
   color: beige;
@@ -224,6 +285,7 @@ footer {
   margin-top: 10px;
   margin-left: 10px;
 }
+
 .pendulos p {
   font-family: "Playfair Display", serif;
   color: beige;
@@ -231,10 +293,13 @@ footer {
   font-weight: 300;
   margin-left: 10px;
 }
+
 .pendulos .video {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-items: center;
-  border: solid 5px rgb(187, 141, 25);
+  border: solid 5px #bb8d19;
 }
 
 /*tarot*/
@@ -245,15 +310,19 @@ footer {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  color: rgb(187, 141, 25);
+  color: #bb8d19;
   font-family: "Dancing Script", cursive;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
   grid-column: 4/6;
 }
 
 .flex .imagentarot {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-items: center;
-  border: solid 5px rgb(187, 141, 25);
+  border: solid 5px #bb8d19;
 }
 
 .tarotsec h2 {
@@ -263,6 +332,7 @@ footer {
   margin-top: 50px;
   margin-left: 10px;
 }
+
 .tarotsec p {
   font-family: "Playfair Display", serif;
   color: beige;
@@ -270,9 +340,10 @@ footer {
   font-weight: 300;
   margin-left: 10px;
 }
+
 .tarotsec .video {
   margin-left: 20px;
-  border: solid 5px rgb(187, 141, 25);
+  border: solid 5px #bb8d19;
 }
 
 /*brujas*/
@@ -283,8 +354,10 @@ footer {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  color: rgb(187, 141, 25);
+  color: #bb8d19;
   font-family: "Dancing Script", cursive;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
   grid-column: 4/6;
 }
 
@@ -295,10 +368,12 @@ footer {
   margin-top: 50px;
   margin-left: 10px;
 }
+
 .brujass img {
   margin-left: 20px;
-  border: solid 5px rgb(187, 141, 25);
+  border: solid 5px #bb8d19;
 }
+
 .brujass p {
   font-family: "Playfair Display", serif;
   color: beige;
@@ -309,7 +384,7 @@ footer {
 
 /*iniciar sesion y registrarse*/
 .ri {
-  border-bottom: solid 5px rgb(63, 110, 15);
+  border-bottom: solid 5px #3f6e0f;
 }
 
 .titulosec {
@@ -319,7 +394,7 @@ footer {
   margin-left: 20px;
   margin-bottom: 30px;
   margin-top: 20px;
-  color: rgb(187, 141, 25);
+  color: #bb8d19;
   font-family: "Dancing Script", cursive;
 }
 
@@ -369,7 +444,9 @@ footer {
 }
 
 .casa {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-row: 2;
   grid-row: 2;
 }
 
@@ -390,114 +467,126 @@ footer {
   .header {
     display: none;
   }
-
   .header-responsive {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    border-bottom: solid 5px rgb(63, 95, 63);
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
+    border-bottom: solid 5px #3f5f3f;
     height: 100%;
   }
-
   .logo-responsive {
     height: 70px;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-column: 1/3;
   }
-
   .titulo-responsive {
     display: inline;
     font-size: 30px;
-    color: rgb(187, 141, 25);
+    color: #bb8d19;
     font-family: "Dancing Script", cursive;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
     grid-column: 5/9;
   }
-
   .menu-responsive {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-column: 11;
+    -ms-grid-column-span: 1;
     grid-column: 11/12;
   }
-
   .navbar-toggler-icon {
     font-size: 10px;
   }
-
   .barranavegacion {
     display: none;
   }
-
   .flex {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-
   .portada {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 200px;
   }
-
   .footer-index {
     display: none;
   }
-
   .footer-responsive {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(7, 40px);
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    -ms-grid-rows: (40px)[7];
+        grid-template-rows: repeat(7, 40px);
   }
-
   .nav {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 4;
     grid-row: 2/6;
   }
-
   .iconos {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 9;
     grid-row: 3/12;
+    -ms-grid-column: 6;
+    -ms-grid-column-span: 6;
     grid-column: 6/12;
   }
-
   .texto {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 10;
     grid-column: 2/12;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
     grid-row: 1/2;
   }
-
   .texto2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 11;
     grid-column: 1/12;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
     grid-row: 5/6;
   }
-
   .header-libros {
     display: none;
   }
-
   .header-cristales {
     display: none;
   }
-
   .header-pendulos {
     display: none;
   }
-
   .header-tarot {
     display: none;
   }
-
   .header-brujas {
     display: none;
   }
-
   .flex img {
     height: 150px;
   }
-
   .video {
     height: 150px;
     width: 270px;
   }
-
   .brujass img {
     height: 150px;
   }
 }
-
 /*# sourceMappingURL=estilos.css.map */

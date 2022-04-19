@@ -1,0 +1,527 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Playfair+Display&display=swap');
+body{
+    background-image: url(../assets/imag/fondo.jpg);
+}
+
+*{
+    margin: 0;
+    padding: 0%;
+}
+//variables 
+
+//import
+@import "color";
+@import "font";
+
+
+//anidación
+.wnav{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 30px;
+    background: rgb(63,110,15);
+    background: $nav-color;
+    margin-top: 20px;
+
+    a{
+        text-decoration: none;
+        color:$text-color;
+        font-family: $font_text;
+        &:hover{
+            color:  $gold-color;
+        }
+    } 
+
+}
+
+/*index*/
+
+header{
+    background-color: rgb(0, 0, 0) ;
+    background-size: 100px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr) ;
+    grid-template-rows: 150px 30px;
+    align-items: center;
+    .logo{
+        width: 150px;
+        height: 150px;
+    }
+    .tituloin{
+        display: inline;
+        font-size: 70px;
+        font-weight: 260px;
+        align-items: center;
+        color: $gold-color;
+        font-family: $font-tittle;
+        grid-column: 4/7;
+    }
+    .boton{
+    grid-row: 2;
+    grid-column: 8
+    }
+    a{
+    text-decoration: none;
+    color: $text-color;
+    }
+    button{
+    background-color: rgb(63, 110, 15);
+    text-decoration-color: $text-color;
+        &:hover{
+        background-color: $gold-color;
+        }
+    }
+    .iconos{
+        grid-column: 8;
+    }
+}
+.flex{
+    display: flex;
+    padding: 30px;
+    flex-direction: row ;
+    justify-content: space-evenly;
+    width: 95%;
+    margin-left: 25px;
+
+    .portada{
+    display: flex;
+    justify-items: center;
+    }
+    .caja{
+        width: 200px;
+        height: 200px;
+        line-height: 20px;
+        margin: 20px;
+        text-align: center;
+        border: solid 5px $gold-color;
+    }
+    .espacio{
+        margin: 10px;
+            &:hover{
+            transform:rotate(-10deg)
+        }
+    }
+}
+
+
+
+/*libros*/
+
+.header-libros{
+    .titulo{
+    display: block;
+    font-size: 70px;
+    font-weight: 260px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto ;
+    color: $gold-color;
+    font-family: $font-tittle; 
+    grid-column: 4/6;
+    }
+}
+
+main{
+    .imagen1{
+    margin: 20px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border: solid 5px $gold-color;
+    }
+    .titulo1{
+    font-family: $font_text;
+    color: $text-color;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    }
+
+    .texto1{
+        font-family:$font_text;
+        color: $text-color;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    .titulo2{
+        font-family: $font_text;
+        color: $text-color;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+    .imagen2{
+        margin: 20px;
+        float: left;
+        margin-bottom: 100px;
+        margin-right: 20px;
+        margin-left: 10px;
+        border: solid 5px $gold-color;
+    }
+    .texto2{
+        font-family: $font_text;
+        color: $text-color;
+        font-size: 15px;
+        font-weight: 300;
+        margin-top: 60px;
+    }
+
+}
+
+
+
+
+footer{
+    color: $text-color;
+    margin-top: 250px;
+    font-family: $font_text;
+    background: rgb(63,110,15);
+    background: $nav-color;
+}
+
+/*cristales*/
+
+.header-cristales{
+    .titulo{
+        display: block;
+        font-size: 70px;
+        font-weight: 260px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto ;
+        color:$gold-color;
+        font-family: $font-tittle; 
+        grid-column: 4/6;
+    }
+}
+
+.cristales{
+    img{
+        display: flex;
+        justify-items: center;
+        border: solid 5px $gold-color;
+    } 
+    h2{
+        font-family: $font_text;
+        color: $text-color;
+        margin-bottom: 10px;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    p{
+        font-family: $font_text;
+        color: $text-color;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 10px;
+    }
+    ol li{
+        font-family: $font_text;
+        color: $text-color;
+        list-style-type: circle 20px;
+        margin-left: 20px;
+    } 
+} 
+
+
+/*pendulos*/
+.header-pendulos{
+    .titulo{
+        display: block;
+        font-size: 70px;
+        font-weight: 260px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto ;
+        color: $gold-color;
+        font-family: $font-tittle; 
+        grid-column: 4/6;
+    }
+}
+
+.pendulos {
+    img{
+        display: flex;
+        justify-items: center;
+        border: solid 5px $gold-color;
+    }
+    h2{
+        font-family: $font_text;
+        color: $text-color;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 10px
+    }
+    p{
+        font-family: $font_text;
+        color: $text-color;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 10px;
+    }
+    .video{
+        display: flex;
+        justify-items: center;
+        border: solid 5px $gold-color;
+    }
+} 
+
+
+
+/*tarot*/
+.header-tarot{
+    .titulo{
+        display: block;
+        font-size: 70px;
+        font-weight: 260px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto ;
+        color: $gold-color;
+        font-family: $font-tittle; 
+        grid-column: 4/6;
+    }
+}
+.flex{
+    .imagentarot{
+        display: flex;
+        justify-items: center;
+        border: solid 5px $gold-color;
+    }
+}
+
+.tarotsec {
+    h2{
+        font-family: $font_text;
+        color: $text-color;
+        margin-bottom: 10px;
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+    p{
+        font-family: $font_text;
+        color: $text-color;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 10px;
+    }
+    .video{
+        margin-left: 20px;
+        border: solid 5px $gold-color;
+    }
+}
+
+
+
+/*brujas*/
+.header-brujas{
+    .titulo{
+        display: block;
+        font-size: 70px;
+        font-weight: 260px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto ;
+        color: $gold-color;
+        font-family: $font-tittle; 
+        grid-column: 4/6;
+    }
+}
+
+.brujass {
+    h2{
+        font-family: $font_text;
+        color: $text-color;
+        margin-bottom: 10px;
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+
+    img{
+        margin-left: 20px;
+        border: solid 5px $gold-color;
+    }
+
+    p{
+        font-family: $font_text;
+        color: $text-color;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 10px;
+    }
+}
+
+/*iniciar sesion y registrarse*/
+
+.ri{
+    border-bottom: solid 5px rgb(63,110,15);
+}
+.titulosec{
+    display: block;
+    font-size: 70px;
+    font-weight: 260px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    color: $gold-color;
+    font-family: $font-tittle;  
+    
+}
+.form-floating{
+    margin-left: 10px;
+    margin-right: 80px;
+    margin-top: 40px;
+}
+
+.col-12{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.col-md-4{
+    color: $text-color;
+    margin-left: 20px;
+}
+.mb-3{
+    color: $text-color;
+    margin-left: 20px;
+}
+.mb-3 input{
+    width: 436px;
+}
+.menusec{
+    color: $text-color;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.liboton li a{
+    text-decoration: none;
+    color: $text-color;
+}
+
+.liboton{
+    margin-left: 20px;
+}
+
+.botones input {
+    display: block;
+    margin: 20px;
+}
+.casa{
+    display: grid;
+    grid-row: 2;
+}
+
+
+/*mediaqueries*/
+.header-responsive{
+    display: none;
+}
+.menu-responsive{
+    display: none;
+}
+.footer-responsive{
+    display: none;
+}
+
+@media screen and (max-width:480px){
+    .header{
+        display: none;
+    }
+    .header-responsive{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(1,1fr);
+        border-bottom: solid 5px rgb(63, 95, 63);
+        height: 100%;
+    }
+    .logo-responsive{
+        height: 70px ;
+        grid-column: 1/3;
+    }
+    .titulo-responsive{
+        display: inline;
+        font-size: 30px;
+        color: rgb(187, 141, 25);
+        font-family: $font-tittle;
+        grid-column: 5/9;
+    }
+    .menu-responsive{
+        display: grid;
+        grid-column: 11/12;
+    }
+    .navbar-toggler-icon{
+        font-size: 10px;
+    }
+    .barranavegacion{
+        display: none;
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
+    .portada{
+        display: flex;
+        justify-content: center;
+        height: 200px;
+    }
+    .footer-index{
+        display: none;
+    }
+
+    .footer-responsive{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(7,40px);
+    }
+    .nav{
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 2/6;
+    }
+    .iconos{
+        grid-row: 3/12;
+        grid-column: 6/12 ;
+    }
+    .texto{
+        grid-column: 2/12;
+        grid-row: 1/2;
+    }
+    .texto2{
+        grid-column: 1/12;
+        grid-row: 5/6;
+    }
+
+    .header-libros{
+        display: none;
+    }
+
+    .header-cristales{
+        display: none;
+    }
+    .header-pendulos{
+        display: none;
+    }
+    .header-tarot{
+        display: none;
+    }
+    .header-brujas{
+        display: none;
+    }
+    .flex img{
+        height: 150px;
+    }
+    .video{
+        height: 150px;
+        width: 270px;
+    }
+
+    .brujass img{
+        height: 150px;
+    }
+}
