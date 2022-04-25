@@ -16,7 +16,13 @@ body{
 @import "color";
 @import "font";
 
-
+//maps
+$headers:(
+    size:70px,
+    weight:260px,
+    margin-l:auto,
+    margin-r:auto,
+);
 //anidación
 .wnav{
     display: flex;
@@ -112,13 +118,13 @@ header{
 /*libros*/
 
 .header-libros{
-    .titulo{
+    .titulo-{
     display: block;
-    font-size: 70px;
-    font-weight: 260px;
+    font-size: map-get($map: $headers, $key:size);
+    font-weight: map-get($map: $headers, $key:weight );
     text-align: center;
-    margin-left: auto;
-    margin-right: auto ;
+    margin-left: map-get($map: $headers, $key: margin-l );
+    margin-right: map-get($map: $headers, $key: margin-r ) ;
     color: $gold-color;
     font-family: $font-tittle; 
     grid-column: 4/6;
@@ -149,52 +155,46 @@ main{
     }
 
     .titulo2{
-        font-family: $font_text;
-        color: $text-color;
-        margin-bottom: 10px;
-        margin-top: 10px;
-        margin-left: 15px;
+        @extend .titulo1;
     }
     .imagen2{
-        margin: 20px;
-        float: left;
+        @extend .imagen1;
         margin-bottom: 100px;
-        margin-right: 20px;
         margin-left: 10px;
-        border: solid 5px $gold-color;
     }
     .texto2{
-        font-family: $font_text;
-        color: $text-color;
-        font-size: 15px;
-        font-weight: 300;
+        @extend .texto1;
         margin-top: 60px;
     }
 
 }
 
 
-
+//mixin
+@mixin foot($font, $f-color,$color, $margin) {
+    font-family: $font;
+    color: $f-color;
+    background: $color;
+    margin-top: $margin;
+    
+}
 
 footer{
-    color: $text-color;
-    margin-top: 250px;
-    font-family: $font_text;
-    background: rgb(63,110,15);
-    background: $nav-color;
+        @include foot ($font_text, $text_color,$nav-color, 250px);
 }
+
 
 /*cristales*/
 
 .header-cristales{
     .titulo{
         display: block;
-        font-size: 70px;
-        font-weight: 260px;
+        font-size: map-get($map: $headers, $key:size);
+        font-weight: map-get($map: $headers, $key:weight );
         text-align: center;
-        margin-left: auto;
-        margin-right: auto ;
-        color:$gold-color;
+        margin-left: map-get($map: $headers, $key: margin-l );
+        margin-right: map-get($map: $headers, $key: margin-r ) ;
+        color: $gold-color;
         font-family: $font-tittle; 
         grid-column: 4/6;
     }
@@ -233,11 +233,11 @@ footer{
 .header-pendulos{
     .titulo{
         display: block;
-        font-size: 70px;
-        font-weight: 260px;
+        font-size: map-get($map: $headers, $key:size);
+        font-weight: map-get($map: $headers, $key:weight );
         text-align: center;
-        margin-left: auto;
-        margin-right: auto ;
+        margin-left: map-get($map: $headers, $key: margin-l );
+        margin-right: map-get($map: $headers, $key: margin-r ) ;
         color: $gold-color;
         font-family: $font-tittle; 
         grid-column: 4/6;
@@ -268,6 +268,7 @@ footer{
         display: flex;
         justify-items: center;
         border: solid 5px $gold-color;
+        
     }
 } 
 
@@ -277,11 +278,11 @@ footer{
 .header-tarot{
     .titulo{
         display: block;
-        font-size: 70px;
-        font-weight: 260px;
+        font-size: map-get($map: $headers, $key:size);
+        font-weight: map-get($map: $headers, $key:weight );
         text-align: center;
-        margin-left: auto;
-        margin-right: auto ;
+        margin-left: map-get($map: $headers, $key: margin-l );
+        margin-right: map-get($map: $headers, $key: margin-r ) ;
         color: $gold-color;
         font-family: $font-tittle; 
         grid-column: 4/6;
@@ -322,11 +323,11 @@ footer{
 .header-brujas{
     .titulo{
         display: block;
-        font-size: 70px;
-        font-weight: 260px;
+        font-size: map-get($map: $headers, $key:size);
+        font-weight: map-get($map: $headers, $key:weight );
         text-align: center;
-        margin-left: auto;
-        margin-right: auto ;
+        margin-left: map-get($map: $headers, $key: margin-l );
+        margin-right: map-get($map: $headers, $key: margin-r ) ;
         color: $gold-color;
         font-family: $font-tittle; 
         grid-column: 4/6;

@@ -97,7 +97,7 @@ header .iconos {
 }
 
 /*libros*/
-.header-libros .titulo {
+.header-libros .titulo- {
   display: block;
   font-size: 70px;
   font-weight: 260px;
@@ -109,55 +109,39 @@ header .iconos {
   grid-column: 4/6;
 }
 
-main .imagen1 {
+main .imagen1, main .imagen2 {
   margin: 20px;
   float: left;
   margin-bottom: 20px;
   margin-right: 20px;
   border: solid 5px rgb(187, 141, 25);
 }
-main .titulo1 {
+main .titulo1, main .titulo2 {
   font-family: "Playfair Display", serif;
   color: beige;
   margin-bottom: 10px;
   margin-top: 20px;
   margin-left: 20px;
 }
-main .texto1 {
+main .texto1, main .texto2 {
   font-family: "Playfair Display", serif;
   color: beige;
   font-size: 15px;
   font-weight: 300;
-}
-main .titulo2 {
-  font-family: "Playfair Display", serif;
-  color: beige;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  margin-left: 15px;
 }
 main .imagen2 {
-  margin: 20px;
-  float: left;
   margin-bottom: 100px;
-  margin-right: 20px;
   margin-left: 10px;
-  border: solid 5px rgb(187, 141, 25);
 }
 main .texto2 {
-  font-family: "Playfair Display", serif;
-  color: beige;
-  font-size: 15px;
-  font-weight: 300;
   margin-top: 60px;
 }
 
 footer {
-  color: beige;
-  margin-top: 250px;
   font-family: "Playfair Display", serif;
-  background: rgb(63, 110, 15);
+  color: beige;
   background: linear-gradient(90deg, rgb(63, 110, 15) 0%, rgb(63, 109, 29) 37%, rgb(107, 109, 29) 66%);
+  margin-top: 250px;
 }
 
 /*cristales*/
@@ -500,4 +484,4 @@ footer {
   }
 }
 
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=eestilos.css.map */
