@@ -10,24 +10,6 @@ body {
   padding: 0%;
 }
 
-.wnav {
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-  padding: 30px;
-  background: rgb(63, 110, 15);
-  background: linear-gradient(90deg, rgb(63, 110, 15) 0%, rgb(63, 109, 29) 37%, rgb(107, 109, 29) 66%);
-  margin-top: 20px;
-}
-.wnav a {
-  text-decoration: none;
-  color: beige;
-  font-family: "Playfair Display", serif;
-}
-.wnav a:hover {
-  color: rgb(187, 141, 25);
-}
-
 /*index*/
 header {
   background-color: rgb(0, 0, 0);
@@ -50,50 +32,42 @@ header .tituloin {
   font-family: "Dancing Script", cursive;
   grid-column: 4/7;
 }
-header .boton {
-  grid-row: 2;
-  grid-column: 8;
-}
-header a {
-  text-decoration: none;
-  color: beige;
-}
-header button {
-  background-color: rgb(63, 110, 15);
-  text-decoration-color: beige;
-}
-header button:hover {
-  background-color: rgb(187, 141, 25);
-}
 header .iconos {
   grid-column: 8;
 }
 
+.navbar-brand button {
+  background-color: rgb(63, 110, 15);
+  color: beige;
+}
+
+.navbar a {
+  text-decoration-color: beige;
+}
+
+.barracolor {
+  color: beige;
+  text-decoration: none;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.barracolor:hover {
+  color: rgb(187, 141, 25);
+}
+
 .flex {
   display: flex;
-  padding: 30px;
-  flex-direction: row;
   justify-content: space-evenly;
-  width: 95%;
-  margin-left: 25px;
 }
-.flex .portada {
-  display: flex;
-  justify-items: center;
-}
-.flex .caja {
-  width: 200px;
+.flex img {
   height: 200px;
-  line-height: 20px;
-  margin: 20px;
-  text-align: center;
   border: solid 5px rgb(187, 141, 25);
+  margin-top: 30px;
 }
-.flex .espacio {
-  margin: 10px;
-}
-.flex .espacio:hover {
-  transform: rotate(-10deg);
+
+.flex-portada {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /*libros*/
@@ -296,6 +270,16 @@ footer {
   border-bottom: solid 5px rgb(63, 110, 15);
 }
 
+.texto-r {
+  color: beige;
+  font-family: "Playfair Display", serif;
+  margin-left: 20px;
+}
+
+.btn-warning {
+  margin-left: 20px;
+}
+
 .titulosec {
   display: block;
   font-size: 70px;
@@ -362,10 +346,6 @@ footer {
   display: none;
 }
 
-.menu-responsive {
-  display: none;
-}
-
 .footer-responsive {
   display: none;
 }
@@ -394,29 +374,6 @@ footer {
     color: rgb(187, 141, 25);
     font-family: "Dancing Script", cursive;
     grid-column: 5/9;
-  }
-
-  .menu-responsive {
-    display: grid;
-    grid-column: 11/12;
-  }
-
-  .navbar-toggler-icon {
-    font-size: 10px;
-  }
-
-  .barranavegacion {
-    display: none;
-  }
-
-  .flex {
-    flex-wrap: wrap;
-  }
-
-  .portada {
-    display: flex;
-    justify-content: center;
-    height: 200px;
   }
 
   .footer-index {

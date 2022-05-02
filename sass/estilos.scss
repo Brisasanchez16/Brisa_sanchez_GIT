@@ -24,25 +24,6 @@ $headers:(
     margin-r:auto,
 );
 //anidación
-.wnav{
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    padding: 30px;
-    background: rgb(63,110,15);
-    background: $nav-color;
-    margin-top: 20px;
-
-    a{
-        text-decoration: none;
-        color:$text-color;
-        font-family: $font_text;
-        &:hover{
-            color:  $gold-color;
-        }
-    } 
-
-}
 
 /*index*/
 
@@ -66,54 +47,46 @@ header{
         font-family: $font-tittle;
         grid-column: 4/7;
     }
-    .boton{
-    grid-row: 2;
-    grid-column: 8
-    }
-    a{
-    text-decoration: none;
-    color: $text-color;
-    }
-    button{
-    background-color: rgb(63, 110, 15);
-    text-decoration-color: $text-color;
-        &:hover{
-        background-color: $gold-color;
-        }
-    }
     .iconos{
         grid-column: 8;
     }
 }
-.flex{
-    display: flex;
-    padding: 30px;
-    flex-direction: row ;
-    justify-content: space-evenly;
-    width: 95%;
-    margin-left: 25px;
+.navbar-brand{
+    button{
+    background-color: rgb(63, 110, 15);
+    color: beige;
+} 
+}
+.navbar{
+    a{
+        text-decoration-color: beige;
+    }
+} 
 
-    .portada{
-    display: flex;
-    justify-items: center;
-    }
-    .caja{
-        width: 200px;
-        height: 200px;
-        line-height: 20px;
-        margin: 20px;
-        text-align: center;
-        border: solid 5px $gold-color;
-    }
-    .espacio{
-        margin: 10px;
-            &:hover{
-            transform:rotate(-10deg)
+.barracolor{
+    color: beige;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: 20px;
+        &:hover{
+            color: rgb(187, 141, 25);
         }
-    }
 }
 
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+        img{
+            height: 200px;
+            border: solid 5px rgb(187, 141, 25);
+            margin-top: 30px;
+        }
+}
 
+.flex-portada{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 /*libros*/
 
@@ -362,6 +335,14 @@ footer{
 .ri{
     border-bottom: solid 5px rgb(63,110,15);
 }
+.texto-r{
+    color: $text-color;
+    font-family: $font_text;
+    margin-left: 20px;
+}
+.btn-warning{
+    margin-left: 20px;
+}
 .titulosec{
     display: block;
     font-size: 70px;
@@ -424,9 +405,6 @@ footer{
 .header-responsive{
     display: none;
 }
-.menu-responsive{
-    display: none;
-}
 .footer-responsive{
     display: none;
 }
@@ -452,24 +430,6 @@ footer{
         color: rgb(187, 141, 25);
         font-family: $font-tittle;
         grid-column: 5/9;
-    }
-    .menu-responsive{
-        display: grid;
-        grid-column: 11/12;
-    }
-    .navbar-toggler-icon{
-        font-size: 10px;
-    }
-    .barranavegacion{
-        display: none;
-    }
-    .flex{
-        flex-wrap: wrap;
-    }
-    .portada{
-        display: flex;
-        justify-content: center;
-        height: 200px;
     }
     .footer-index{
         display: none;

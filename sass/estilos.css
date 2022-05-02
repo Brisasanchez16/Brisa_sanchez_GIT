@@ -10,31 +10,6 @@ body {
   padding: 0%;
 }
 
-.wnav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  list-style: none;
-  padding: 30px;
-  background: #3f6e0f;
-  background: -webkit-gradient(linear, left top, right top, from(#3f6e0f), color-stop(37%, #3f6d1d), color-stop(66%, #6b6d1d));
-  background: linear-gradient(90deg, #3f6e0f 0%, #3f6d1d 37%, #6b6d1d 66%);
-  margin-top: 20px;
-}
-
-.wnav a {
-  text-decoration: none;
-  color: beige;
-  font-family: "Playfair Display", serif;
-}
-
-.wnav a:hover {
-  color: #bb8d19;
-}
-
 /*index*/
 header {
   background-color: black;
@@ -69,72 +44,54 @@ header .tituloin {
   grid-column: 4/7;
 }
 
-header .boton {
-  -ms-grid-row: 2;
-  grid-row: 2;
+header .iconos {
   -ms-grid-column: 8;
   grid-column: 8;
 }
 
-header a {
-  text-decoration: none;
+.navbar-brand button {
+  background-color: #3f6e0f;
   color: beige;
 }
 
-header button {
-  background-color: #3f6e0f;
+.navbar a {
   -webkit-text-decoration-color: beige;
           text-decoration-color: beige;
 }
 
-header button:hover {
-  background-color: #bb8d19;
+.barracolor {
+  color: beige;
+  text-decoration: none;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
-header .iconos {
-  -ms-grid-column: 8;
-  grid-column: 8;
+.barracolor:hover {
+  color: #bb8d19;
 }
 
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 30px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 95%;
-  margin-left: 25px;
 }
 
-.flex .portada {
+.flex img {
+  height: 200px;
+  border: solid 5px #bb8d19;
+  margin-top: 30px;
+}
+
+.flex-portada {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-items: center;
-}
-
-.flex .caja {
-  width: 200px;
-  height: 200px;
-  line-height: 20px;
-  margin: 20px;
-  text-align: center;
-  border: solid 5px #bb8d19;
-}
-
-.flex .espacio {
-  margin: 10px;
-}
-
-.flex .espacio:hover {
-  -webkit-transform: rotate(-10deg);
-          transform: rotate(-10deg);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 /*libros*/
@@ -370,6 +327,16 @@ footer {
   border-bottom: solid 5px #3f6e0f;
 }
 
+.texto-r {
+  color: beige;
+  font-family: "Playfair Display", serif;
+  margin-left: 20px;
+}
+
+.btn-warning {
+  margin-left: 20px;
+}
+
 .titulosec {
   display: block;
   font-size: 70px;
@@ -438,10 +405,6 @@ footer {
   display: none;
 }
 
-.menu-responsive {
-  display: none;
-}
-
 .footer-responsive {
   display: none;
 }
@@ -474,32 +437,6 @@ footer {
     -ms-grid-column: 5;
     -ms-grid-column-span: 4;
     grid-column: 5/9;
-  }
-  .menu-responsive {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-column: 11;
-    -ms-grid-column-span: 1;
-    grid-column: 11/12;
-  }
-  .navbar-toggler-icon {
-    font-size: 10px;
-  }
-  .barranavegacion {
-    display: none;
-  }
-  .flex {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .portada {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 200px;
   }
   .footer-index {
     display: none;
